@@ -5,7 +5,9 @@ const combine = function(a,b,c) {
 
 // Create an arrow function that completes the requirements
 const combineArrowFunction = (a,b,c) => {
-    return a*b/c
+    const results = a*b/c
+    console.log(results)
+    return results
 }
 
 // Run the combine function
