@@ -10,14 +10,14 @@ import TabButton from "./components/TabButton.jsx"
 import { useState } from "react"
 
 function App() {
-  const [tabContent, setTabContent] = useState("Please select a tab")
+  const [selectedTopic, setSelectedTopic] = useState("Please select a tab")
 
   function handleSelect(button) {
     // button => 'components', 'jsx', 'props', or 'state'
-    setTabContent(button)
-    console.log(tabContent)
+    setSelectedTopic(button)
+    console.log(selectedTopic)
   }
-  
+
   return (
     <div>
       <Header />
@@ -39,7 +39,7 @@ function App() {
             <TabButton onSelect={() => handleSelect("props")}>Props</TabButton>
             <TabButton onSelect={() => handleSelect("state")}>State</TabButton>
           </menu>
-          {tabContent}
+          {selectedTopic}
         </section>
       </main>
     </div>
