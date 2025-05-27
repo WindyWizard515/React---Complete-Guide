@@ -3,6 +3,7 @@ import { useState } from "react"
 import Player from "./Components/Player.jsx"
 import GameBoard from "./Components/GameBoard.jsx"
 import Log from "./Components/Log.jsx"
+import { WINNING_COMBINATIONS } from "../winning-combinations.js"
 
 function getActivePlayer(gameTurns) {
     let currentPlayer = "X"
