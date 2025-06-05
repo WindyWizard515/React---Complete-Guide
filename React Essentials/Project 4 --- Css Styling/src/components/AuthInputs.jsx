@@ -7,6 +7,9 @@ const ControlDiv = styled.div`
   gap: 0.5rem;
   margin-bottom: 1.5rem;
 `
+
+const Label = styled.label
+
 export default function AuthInputs() {
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredPassword, setEnteredPassword] = useState('');
