@@ -7,6 +7,7 @@ export default function Player() {
   function handleClick() {
     setEnteredPlayerName(playerName.current.value)
     }
+
   return (
     <section id="player">
       <h2>Welcome {enteredPlayerName ? enteredPlayerName : "unknown entity"}</h2>
