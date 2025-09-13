@@ -39,7 +39,7 @@ export default function Cart({ items, onUpdateItemQuantity }) {
             );
           })}
         </ul>
-      )}
+      )}1
       <p id="cart-total-price">
         Cart Total: <strong>{formattedTotalPrice}</strong>
       </p>
